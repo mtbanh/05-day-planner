@@ -16,15 +16,7 @@ $(document).ready(function () {
 
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-//on click event for #textarea that will display the input value
-
-// $("#text-area-1").on("click", function(){
-//     var textArea = $("<textarea>")
-//     textArea.attr("id", "user-input");
-//     textArea.attr("rows", "1");
-//     textArea.attr("cols", "100");
-//     $("#text-area-1").append($(textArea));    
-// })
-// })
+//TODO: create local storage that will store user's input when click on save buttons
 
 
+})
