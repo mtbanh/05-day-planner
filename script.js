@@ -132,11 +132,12 @@ init()
 function color(){
     $(".time-block").each(function(){
         var hour = parseInt($(this).attr("id"));
+        var currentHour = parseInt(currentTime.split(":")[0]);
         console.log(hour);
 
-        if (hour < currentTime){
+        if (hour < currentHour){
             $(this).addClass("past");
-        } else if (hour === currentTime){
+        } else if (hour === currentHour){
             $(this).removeClass("past");
             $(this).addClass("present");
         } else {
@@ -151,5 +152,3 @@ color()
     
 })
 
-
-//create a for loop that will iterate through the txt value for data-text and 
