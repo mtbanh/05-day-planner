@@ -16,7 +16,17 @@ $(document).ready(function () {
 
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-//TODO: create local storage that will store user's input when click on save buttons
+//on click event save btn will do the following:
+//save the user-input value to local storage with the corresponding data-time
+
+$(".saveBtn").on("click", function(event){
+    event.preventDefault();
+    var userInput = $("#user-input").val()
+    // console.log($("#user-input").val())
+    console.log(userInput)
+    localStorage.setItem("user-input", JSON.stringify(userInput));
+
+})
 
 
 })
