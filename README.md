@@ -31,7 +31,10 @@ The code snippet below store the user's input into local storage upon clicking s
 
 }
 ```
+## Demo
 
+
+![Deployed Application](deployed-site.gif)
 ---
 
 ## Deployed link

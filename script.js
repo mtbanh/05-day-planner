@@ -33,7 +33,6 @@ $("#saveBtn9").on("click", function(event){
 $("#saveBtn10").on("click", function(event){
     event.preventDefault();
     var userInput = $("#user-input-10").val()
-    // console.log($("#user-input").val())
     console.log(userInput)
     localStorage.setItem("user-input-10", JSON.stringify(userInput));
 })
