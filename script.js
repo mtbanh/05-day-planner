@@ -16,6 +16,10 @@ $(document).ready(function () {
 
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
+//TODO: need to create a function that will keep track of the current hour and change the style of the time block to reflect it
+//while loop(?) to check if the current hour is > than row; change style to be gray, else if (hour = row) change style to be white and else change style to be green
+var currentTime = moment().format("h:mm");
+
 //on click event save btn will do the following:
 //save the user-input value to local storage with the corresponding data-time
 
@@ -124,6 +128,27 @@ function init(){
     }
 }   
 init()
+
+function color(){
+    $(".time-block").each(function(){
+        var hour = parseInt($(this).attr("id"));
+        console.log(hour);
+
+        if (hour > currentTime){
+            $(this).addClass("past");
+        } else if (hour === currentTime){
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        } else {
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        }
+    })
+}
+color()
+
+    
 })
 
 
