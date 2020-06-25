@@ -81,6 +81,50 @@ $("#saveBtn17").on("click", function(event){
     // console.log($("#user-input").val())
     console.log(userInput)
     localStorage.setItem("user-input-17", JSON.stringify(userInput));
+});
+
+//create a function that will retrieve any stored input and display it in the appropriate area
+
+function init(){
+    var storedUserInput9 = JSON.parse(localStorage.getItem("user-input-9"));
+    if (storedUserInput9 !== null) {
+        $("#user-input-9").text(storedUserInput9)
+    }
+    var storedUserInput10 = JSON.parse(localStorage.getItem("user-input-10"));
+    if (storedUserInput10 !== null) {
+        $("#user-input-10").text(storedUserInput10)
+    }
+    var storedUserInput11 = JSON.parse(localStorage.getItem("user-input-11"));
+    if (storedUserInput11 !== null) {
+        $("#user-input-11").text(storedUserInput11)
+    }
+    var storedUserInput12 = JSON.parse(localStorage.getItem("user-input-12"));
+    if (storedUserInput12 !== null) {
+        $("#user-input-12").text(storedUserInput12)
+    }
+    var storedUserInput13 = JSON.parse(localStorage.getItem("user-input-13"));
+    if (storedUserInput13 !== null) {
+        $("#user-input-13").text(storedUserInput13)
+    }
+    var storedUserInput14 = JSON.parse(localStorage.getItem("user-input-14"));
+    if (storedUserInput14 !== null) {
+        $("#user-input-14").text(storedUserInput14)
+    }
+    var storedUserInput15 = JSON.parse(localStorage.getItem("user-input-15"));
+    if (storedUserInput15 !== null) {
+        $("#user-input-15").text(storedUserInput15)
+    }
+    var storedUserInput16 = JSON.parse(localStorage.getItem("user-input-16"));
+    if (storedUserInput16 !== null) {
+        $("#user-input-16").text(storedUserInput16)
+    }
+    var storedUserInput17 = JSON.parse(localStorage.getItem("user-input-17"));
+    if (storedUserInput17 !== null) {
+        $("#user-input-17").text(storedUserInput17)
+    }
+}   
+init()
 })
 
-})
+
+//create a for loop that will iterate through the txt value for data-text and 
